@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  background: url('imagens/imagem-fundo3.jfif') no-repeat center center fixed;
+  background-size: cover;
+}
+
+html, body {
+  height: 100%;
+}
+
+/* Top Navigation */
+.top-nav {
+  background-color: #0073b1;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-nav .left {
+  display: flex;
+  align-items: center;
+}
+
+.project-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin-right: 20px;
+}
+
+.top-nav .right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.top-nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+/* Menu Centralizado */
+.menu-centralizado {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(230, 240, 248, 0.8);
+  padding: 20px 0 10px;
+  border-top: 1px solid #d0e1f0;
+}
+
+.sub-nav {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.sub-nav a {
+  color: #0073b1;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.sub-nav a:hover {
+  background-color: #d0e9ff;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.5em;
+  text-shadow: 1px 1px 2px black;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+}
+
+/* Buttons */
+.btn-publish {
+  background-color: #00aaff;
+  border: none;
+  padding: 10px 25px;
+  color: white;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 25px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+/* Forms */
+.form-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: white;
+  color: #333;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.cadastro-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cadastro-form input,
+.cadastro-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.cadastro-form button {
+  margin-top: 10px;
+}
+
+/* Projeto Card */
+.project-card {
+  background-color: white;
+  color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+  margin-top: 0;
+}
+
+.project-card button {
+  margin-top: 10px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  .top-nav, .top-nav .right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .menu-centralizado {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sub-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .btn-publish, .btn-outline {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
