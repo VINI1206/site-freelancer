@@ -190,3 +190,23 @@ html, body {
     margin: 5px 0;
   }
 }
+.chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  z-index: 999;
+  transition: transform 0.2s ease;
+}
+
+.chat-button:hover {
+  transform: scale(1.1);
+}
+
+.chat-button img {
+  width: 32px;
+  height: 32px;
+}
